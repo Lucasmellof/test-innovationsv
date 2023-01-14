@@ -6,7 +6,7 @@
 
 Este projeto consiste em uma API Restful que utiliza o [NestJS](https://nestjs.com/) como framework, a API provê
 endpoints de *CRUD*(Criar, Ler, Atualizar e Deletar) permitindo que os usuários cadastrem, visualizem, atualizem e
-deletem produtos. Além disso a API tem endpoints de visualização dos municípios do Rio de Janeiro através da API
+deletem produtos. Além disso, a API tem endpoints de visualização dos municípios do Rio de Janeiro através da API
 do [IBGE](https://servicodados.ibge.gov.br).
 
 ## 💻 Tecnologias
@@ -27,5 +27,7 @@ do [IBGE](https://servicodados.ibge.gov.br).
 2. Execute `pnpm install` para instalar a dependências.
 3. Configure as variáveis de ambiente. Para fazer isso copie o `.env.sample` para `.env` e preencha as informações.
 4. Gere os tipos do [Prisma](https://prisma.io/) usando `pnpm database:generate`.
-5. Inicie uma instancia do [PostgreSQL](https://www.postgresql.org/).
-6. Inicie a aplicação usando `pnpm start`.
+5. Inicie uma instância do [PostgreSQL](https://www.postgresql.org/).
+6. Execute o `pnpm database:seed` para popular o banco de dados com as informações do IBGE.
+7. Inicie a aplicação usando `pnpm start`.
+8. Pronto, agora seu servidor web está rodando na porta 3000.

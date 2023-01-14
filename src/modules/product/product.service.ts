@@ -1,5 +1,5 @@
 import { ConflictException, Injectable, NotFoundException } from "@nestjs/common";
-import { Product, Status } from "@prisma/client";
+import { type Product } from "@prisma/client";
 import { PrismaService } from "src/modules/prisma/prisma.service";
 import { ProductDTO } from "./product.dto";
 
@@ -22,19 +22,24 @@ export class ProductService {
 	}
 
 	async findAll(): Promise<Product[]> {
-		return await this.prisma.product.findMany();
+		return await this.prisma.product.findMany({
+			where: {
+				deleted_at: null
+			}
+		});
 	}
 
 	async findOne(id: number): Promise<Product> {
-		return await this.prisma.product.findUnique({
+		return await this.prisma.product.findFirst({
 			where: {
-				id
+				id,
+				deleted_at: null
 			}
 		});
 	}
 
 	async update(id: number, data: ProductDTO): Promise<Product> {
-		const productExists = this.findOne(id);
+		const productExists = await this.findOne(id);
 
 		if (!productExists) {
 			throw new NotFoundException("Não existe um produto registrado com esse ID.");
@@ -49,7 +54,7 @@ export class ProductService {
 	}
 
 	async delete(id: number) {
-		const productExists = this.findOne(id);
+		const productExists = await this.findOne(id);
 
 		if (!productExists) {
 			throw new NotFoundException("Não existe um produto registrado com esse ID.");
@@ -57,7 +62,6 @@ export class ProductService {
 
 		return await this.prisma.product.update({
 			data: {
-				status: Status.INACTIVE,
 				deleted_at: new Date()
 			},
 			where: {

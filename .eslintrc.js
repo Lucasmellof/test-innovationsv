@@ -23,7 +23,6 @@ module.exports = {
 		"@typescript-eslint/no-explicit-any": "off",
 		"prettier/prettier": "error",
 		"spaced-comment": "error",
-		indent: ["error", "tab"],
 		quotes: ["error", "double"],
 		semi: ["error", "always"],
 		"no-duplicate-imports": "error",

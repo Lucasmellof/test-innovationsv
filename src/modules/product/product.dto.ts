@@ -1,4 +1,4 @@
-import { Product, Status } from "@prisma/client";
+import { Status } from "@prisma/client";
 
 import { IsEnum, IsNotEmpty, IsNumber, IsOptional, IsString } from "class-validator";
 

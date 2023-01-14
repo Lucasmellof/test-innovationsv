@@ -1,8 +1,6 @@
-<p align="center">
-  <h1>Teste Innovationsv</h1>
-</p>
+<h1 align="center">Teste Innovationsv</h1>
 
-## 🏟️ Projeto
+## ⭐ Projeto
 
 Este projeto consiste em uma API Restful que utiliza o [NestJS](https://nestjs.com/) como framework, a API provê
 endpoints de *CRUD*(Criar, Ler, Atualizar e Deletar) permitindo que os usuários cadastrem, visualizem, atualizem e
@@ -18,7 +16,7 @@ do [IBGE](https://servicodados.ibge.gov.br).
 - [PostegreSQL](https://www.postgresql.org/)
 - [Axios](https://axios-http.com)
 
-## 🧰 Como executar
+## 🚀 Como executar
 
 > Neste projeto eu utilizei o [PNPM](https://pnpm.io/), mas é possível executar o projeto com
 > o [NPM](https://nodejs.org/) ou [Yarn](https://yarnpkg.com/).

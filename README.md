@@ -13,7 +13,7 @@ do [IBGE](https://servicodados.ibge.gov.br).
 - [NodeJS](https://nodejs.org/)
 - [NestJS](https://nestjs.com/)
 - [Prisma](https://www.prisma.io/)
-- [PostegreSQL](https://www.postgresql.org/)
+- [PostgreSQL](https://www.postgresql.org/)
 - [Axios](https://axios-http.com)
 
 ## 🚀 Como executar

@@ -18,10 +18,10 @@ do [IBGE](https://servicodados.ibge.gov.br).
 
 ## 🚀 Como executar
 
-> Neste projeto eu utilizei o [PNPM](https://pnpm.io/), mas é possível executar o projeto com
+> **Note**: Neste projeto eu utilizei o [PNPM](https://pnpm.io/), mas é possível executar o projeto com
 > o [NPM](https://nodejs.org/) ou [Yarn](https://yarnpkg.com/).
 
-> Todos os testes foram feitos com o [Insomnia](https://insomnia.rest/), eu enviei a minha coleção de requisições do projeto, caso queira só importar esse [arquivo](https://raw.githubusercontent.com/Lucasmellof/test-innovationsv/main/insomnia-innovationsv.json) e você terá as requisições.
+> **Note**: Todos os testes foram feitos com o [Insomnia](https://insomnia.rest/), eu enviei a minha coleção de requisições do projeto, caso queira só importar esse [arquivo](https://raw.githubusercontent.com/Lucasmellof/test-innovationsv/main/insomnia-innovationsv.json) e você terá as requisições.
 
 1. Clone esse repositório.
 2. Execute `pnpm install` para instalar a dependências.
